@@ -111,7 +111,7 @@ client.on('messageCreate', (message) =>{
 
                 }else if (guessCount === 6){
                     result = checkGuess();
-                    result += "\n" + guessDisplay + "\nDUMB BITCH THE WORD WAS: " + word;
+                    result += "\n" + guessDisplay + "\nOut of guesses! The word was: " + word;
                     message.reply(result.toString());
                     isStarted = false;
                 }
